@@ -1,0 +1,20 @@
+@font-face {
+  font-family: "Onest400";
+  font-weight: 400;
+  src: url("./Onest-Regular.ttf");
+}
+@font-face {
+  font-family: "Onest500";
+  font-weight: 500;
+  src: url("./Onest-Medium.ttf");
+}
+@font-face {
+  font-family: "Azoft700";
+  font-weight: 700;
+  src: url("./azoft-sans-bold.ttf");
+}
+/* @font-face{
+    font-family: "Onest500";
+    font-weight: 500;
+    src: url("./Onest-Medium.ttf");
+} */

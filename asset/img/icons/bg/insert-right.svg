@@ -1,0 +1,11 @@
+<svg width="450" height="65" viewBox="0 0 450 65" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g opacity="0.3">
+<path d="M11 10H72L108 57H276L307 10H450" stroke="#FEFEFE" stroke-width="2"/>
+<ellipse cx="7.5" cy="7" rx="7.5" ry="7" transform="matrix(-1 0 0 1 219 50)" fill="#FEFEFE"/>
+<path opacity="0.2" d="M272 64H102L78 31" stroke="#FEFEFE" stroke-width="2"/>
+<ellipse cx="11" cy="10" rx="11" ry="10" fill="#FEFEFE"/>
+<path d="M350 29H335L345 13H359L350 29Z" fill="#FEFEFE"/>
+<path d="M332 29H317L327 13H341L332 29Z" fill="#FEFEFE"/>
+<path d="M315 29H300L310 13H324L315 29Z" fill="#FEFEFE"/>
+</g>
+</svg>
