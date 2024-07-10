@@ -1,13 +1,16 @@
 document.addEventListener("DOMContentLoaded", () => {
   burgerLogic();
+  headerDropdownLogic();
   // headerResize();
-  // switchLogic();
-  // switcherLogic();
+  switchLogic();
+  switcherLogic();
   // sliderLogic();
   dropdownLogic();
-  // mainBannerLogic()
+  mainBannerLogic();
   moreProductLogic();
+  modalLogic();
 });
+const body = document.querySelector("body");
 // burger ----------------------------------------------------------------------------------------
 function burgerLogic() {
   const burger = document?.querySelector("[data-burger]");
@@ -45,6 +48,20 @@ function headerResize() {
     }
   });
 }
+// headerDropdownLogic
+function headerDropdownLogic() {
+  if (window.innerWidth > 1300) return;
+  const header = document.querySelector("header");
+  const btnNavItems = header.querySelectorAll(".nav-item");
+
+  btnNavItems.forEach((navItem) => {
+    navItem.addEventListener("click", () => {
+      // const navItemDrop = navItem.querySelector(".nav-item__dropdown");
+      navItem.classList.toggle("active");
+      // navItemDrop.classList.toggle("active");
+    });
+  });
+}
 // switch ----------------------------------------------------------------------------------------
 function switchLogic() {
   const switchNodes = document.querySelectorAll(".switcher");
@@ -65,8 +82,8 @@ function switchLogic() {
 }
 // switcher ----------------------------------------------------------------------------------------
 function switcherLogic() {
-  const switchBlock = document.querySelector(".switcher-service");
-
+  const switchBlock = document.querySelector(".switcher-product");
+  if (!switchBlock) return;
   const titleItems = switchBlock.querySelectorAll(".switcher-title__item");
   const contentItems = switchBlock.querySelectorAll(".switcher-content__item");
   titleItems.forEach((item) =>
@@ -141,6 +158,7 @@ function mainBannerLogic() {
   const imgFrame2 = document.querySelector(".banner-frame2");
   const imgFrame3 = document.querySelector(".banner-frame3");
   const imgFrame4 = document.querySelector(".banner-frame4");
+  if (!imgFrame1) return;
   let numImg = 1;
   setInterval(() => {
     numImg = numImg === 5 ? 1 : numImg + 1;
@@ -154,6 +172,7 @@ function moreProductLogic() {
   const productSecondBlock = document.querySelector(
     ".product__content--second"
   );
+  if (!productSecondBlock) return;
   const btnClick = document.querySelector(".product__btn--more");
   btnClick.addEventListener("click", () => {
     if (productSecondBlock.className.includes("active")) {
@@ -162,6 +181,47 @@ function moreProductLogic() {
     } else {
       productSecondBlock.classList.add("active");
       btnClick.innerHTML = "Скрыть все продукты";
+    }
+  });
+}
+// modalLogic
+function modalLogic() {
+  const modalBlock = document.querySelector(".modal-block");
+  if (!modalBlock) return;
+  const btns = document.querySelectorAll(".open-modal");
+  const modalOverlay = modalBlock.querySelector(".modal-overlay ");
+  const modal = modalBlock.querySelector(".modal");
+  const modalContent = modalBlock.querySelector(".modal-content");
+  const btnsClose = modalBlock.querySelector(".modal-close");
+  btns.forEach((el) => {
+    el.addEventListener("click", (e) => {
+      let path = e.currentTarget.getAttribute("data-path");
+      body.style.overflow = "hidden";
+      body.style.paddingRight = "10px";
+      modalContent.innerHTML = el.outerHTML;
+      // modalContent.classList.add("certificate-block");
+      modal.classList.add("modal--visible");
+      modalOverlay.classList.add("modal-overlay--visible");
+    });
+  });
+
+  btnsClose.addEventListener("click", () => {
+    modalOverlay.classList.remove("modal-overlay--visible");
+    modalContent.innerHTML = "";
+    // modalContent.classList.remove("certificate-block");
+    body.style.overflow = "auto";
+    body.style.paddingRight = "0";
+    modal.classList.remove("modal--visible");
+  });
+
+  modalOverlay.addEventListener("click", (e) => {
+    if (e.target == modalOverlay) {
+      modalContent.innerHTML = "";
+      // modalContent.classList.remove("certificate-block");
+      body.style.overflow = "auto";
+      body.style.paddingRight = "0";
+      modalOverlay.classList.remove("modal-overlay--visible");
+      modal.classList.remove("modal--visible");
     }
   });
 }

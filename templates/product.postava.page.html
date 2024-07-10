@@ -3,20 +3,24 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>E2E</title>
-    <link rel="stylesheet" href="./asset/main.css" />
-    <link rel="stylesheet" href="./asset/style.css" />
-    <link rel="stylesheet" href="./asset/fonts/font.css" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../asset/main.css" />
+    <link rel="stylesheet" href="../asset/style.css" />
+    <link rel="stylesheet" href="../asset/fonts/font.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
 
   <body>
-    <div class="wrapper" id="main-page">
+    <div class="wrapper" id="services-page">
       <header class="header">
         <div class="container">
           <div class="header-logo">
             <a href="/">
-              <img src="./asset/img/logo_e2e.png" alt="logo" />
-              <img src="./asset/img/logo_1c.png" alt="logo" />
+              <img src="../asset/img/logo_e2e.png" alt="logo" />
+              <img src="../asset/img/logo_1c.png" alt="logo" />
             </a>
           </div>
           <button
@@ -32,37 +36,37 @@
               <li class="nav-item">
                 <div class="nav-item__url">
                   <span>Услуги</span>
-                  <img src="./asset/img/icons/IconArrowBottom.svg" alt="" />
+                  <img src="../asset/img/icons/IconArrowBottom.svg" alt="" />
                 </div>
 
                 <div class="nav-item__dropdown">
                   <ul>
-                    <a href="./templates/services.logistic.page.html">
+                    <a href="../templates/services.logistic.page.html">
                       <li>Логистика</li>
                     </a>
-                    <a href="./templates/services.torgovly.page.html">
+                    <a href="../templates/services.torgovly.page.html">
                       <li>Розница</li>
                     </a>
-                    <a href="./templates/services.obshepit.page.html">
+                    <a href="../templates/services.obshepit.page.html">
                       <li>Общепит</li>
                     </a>
-                    <a href="./templates/services.making.page.html">
+                    <a href="../templates/services.making.page.html">
                       <li>Производство</li>
                     </a>
                   </ul>
                 </div>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active">
                 <div class="nav-item__url">
                   <span>Продукты</span>
-                  <img src="./asset/img/icons/IconArrowBottom.svg" alt="" />
+                  <img src="../asset/img/icons/IconArrowBottom.svg" alt="" />
                 </div>
                 <div class="nav-item__dropdown">
                   <ul>
-                    <a href="./templates/product.postava.page.html">
+                    <a href="../templates/product.postava.page.html">
                       <li>Поставляемые</li>
                     </a>
-                    <a href="./templates/product.buh.page.html">
+                    <a href="../templates/product.buh.page.html">
                       <li>Бухгалтерия</li>
                     </a>
                   </ul>
@@ -75,14 +79,14 @@
               <li class="nav-item">
                 <div class="nav-item__url">
                   <span>Импортозамещение</span>
-                  <img src="./asset/img/icons/IconArrowBottom.svg" alt="" />
+                  <img src="../asset/img/icons/IconArrowBottom.svg" alt="" />
                 </div>
                 <div class="nav-item__dropdown">
                   <ul>
-                    <a href="./templates/rentProgram.page.html">
+                    <a href="../templates/rentProgram.page.html">
                       <li>Аренда</li>
                     </a>
-                    <a href="./templates/certificate.page.html">
+                    <a href="../templates/certificate.page.html">
                       <li>Сертификаты</li>
                     </a>
                   </ul>
@@ -92,17 +96,17 @@
                 <a class="nav-item__url" href="#">Битрикс 24</a>
               </li>
               <li class="nav-item">
-                <a class="nav-item__url" href="./templates/about.page.html"
+                <a class="nav-item__url" href="../templates/about.page.html"
                   >О нас</a
                 >
               </li>
             </ul>
             <div class="nav-contact">
               <div class="header-contact">
-                <span class="nav-item">
+                <span class="nav-item ">
                   <a
                     class="nav-item__url"
-                    href="./templates/contacts.page.html"
+                    href="../templates/contacts.page.html"
                   >
                     Контакты
                   </a>
@@ -127,145 +131,22 @@
           </div> -->
         </div>
       </header>
-      <!-- <section class="main-banner">
+      <section class="product-title">
         <div class="container">
-          <h1>Индивидуальные IT решения на платформе 1С:Предприятие 8</h1>
-          <div class="banner text18">
-            <div class="banner-box">
-              <img src="./asset/img/main banner - box.png" alt="box" />
-              <img
-                src="./asset/img/main banner/main-baner-1-3.svg"
-                class="banner-frame banner-frame1"
-              />
-              <img
-                src="./asset/img/main banner/main-baner-2-2.svg"
-                class="banner-frame banner-frame2"
-              />
-              <img
-                src="./asset/img/main banner/main-baner-3-2.svg"
-                class="banner-frame banner-frame3"
-              />
-              <img
-                src="./asset/img/main banner/main-baner-4-2.svg"
-                class="banner-frame banner-frame4"
-              />
-              <div class="banner-text banner-text1">
-                <img
-                  src="./asset/img/main banner/banner-text-1.svg"
-                  alt="icon"
-                />
-                <span>
-                  <span class="accent-blue">10 лет</span>
-                   разрабатываем решения<br />
-                  на «1С:Предприятие»
-                </span>
+          <div class="product-title__ctn">
+            <div class="product-title__content">
+              <h1 class="color-red">Поставляемые продукты 1C</h1>
+              <div class="product-title__text">
+                Оставьте заявку, чтобы мы помогли вам с выбором нужного продукта
+                для вашей компании
               </div>
-              <div class="banner-text banner-text2">
-                <img
-                  src="./asset/img/main banner/banner-text-2.svg"
-                  alt="icon"
-                />
-                <span>
-                  <span class="accent-blue"
-                    >Профессиональное <br />
-                    обеспечение</span
-                  >
-                  программами<br />
-                  «1С» по всей России
-                </span>
-              </div>
-              <div class="banner-text banner-text3">
-                <img
-                  src="./asset/img/main banner/banner-text-3.svg"
-                  alt="icon"
-                />
-                <span>
-                  Почасовая оплата —<br />
-                  <span class="accent-blue">экономия до 50%</span>
-                </span>
-              </div>
-              <div class="banner-text banner-text4">
-                <img
-                  src="./asset/img/main banner/banner-text-4.svg"
-                  alt="icon"
-                />
-                <span>
-                  Срочные задачи начинаем<br />
-                  в течение
-                  <span class="accent-blue">20 минут</span>
-                </span>
-              </div>
+              <button class="button button-blue">Оставить заявку</button>
             </div>
-          </div>
-        </div>
-      </section> -->
-      <section class="main-service">
-        <div class="container">
-          <h1>Услуги</h1>
-          <div class="main-service__content">
-            <div class="card">
-              <h3>Аналитика</h3>
-              <div class="card-text text18">
-                Наш менеджер максимально упростит и автоматизирует работу вашей
-                компании
-              </div>
-            </div>
-            <div class="card">
-              <h3>Программы <span class="accent-red">1C</span></h3>
-              <div class="card-text text18">
-                Подберём для вас наилучшие готовые решения на базе 1С
-                и не только
-              </div>
-            </div>
-            <div class="card">
-              <h3>Доработка</h3>
-              <div class="card-text text18">
-                Допишем стандартные программы конкретно под вашу специфику
-                работы
-              </div>
-            </div>
-            <div class="card">
-              <h3>Разработка</h3>
-              <div class="card-text text18">
-                Разработаем программу любой сложности под ваши задачи с нуля
-              </div>
-            </div>
-            <div class="card">
-              <h3>Оборудование</h3>
-              <div class="card-text text18">
-                Комплексно подберём и установим оборудование для вашего
-                предприятия
-              </div>
-            </div>
-            <div class="card">
-              <h3>Поддержка <span class="accent-red">1С</span></h3>
-              <div class="card-text text18">
-                Сопровождение программ 1С от 75 часов в месяц
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <section class="insert-mark">
-        <div class="container">
-          <div class="insert-ctn">
-            <h2>Хотите узнать стоимость?</h2>
-            <div class="insert-mark__right">
-              <div class="insert-mark__text text22">
-                Заполните простую формы и мы ответим на все интересующие
-                вас вопросы
-              </div>
-              <button class="button button-white">Оставить заявку</button>
-            </div>
+
             <img
-              class="img-inser-1"
-              src="./asset/img/icons/bg/insert-1.svg"
-              alt="inser-1"
-            />
-            <img
-              class="img-inser-2"
-              src="./asset/img/icons/bg/insert-2.svg"
-              alt="inser-2"
+              class="service-title__bg"
+              src="../asset/img/some-bg.png"
+              alt="bg"
             />
           </div>
         </div>
@@ -276,7 +157,7 @@
           <div class="product__content--first">
             <div class="card">
               <div class="card-img">
-                <img src="./asset/img/product-card.png" alt="book" />
+                <img src="../asset/img/product-card.png" alt="book" />
               </div>
               <div class="card-content">
                 <h3 class="card-title">1С:Управление фирмой</h3>
@@ -297,7 +178,7 @@
             </div>
             <div class="card">
               <div class="card-img">
-                <img src="./asset/img/product-card.png" alt="book" />
+                <img src="../asset/img/product-card.png" alt="book" />
               </div>
               <div class="card-content">
                 <h3 class="card-title">1С:Управление торговлей 8</h3>
@@ -315,7 +196,7 @@
             </div>
             <div class="card">
               <div class="card-img">
-                <img src="./asset/img/product-card.png" alt="book" />
+                <img src="../asset/img/product-card.png" alt="book" />
               </div>
               <div class="card-content">
                 <h3 class="card-title">1C:Зарплата и управление персоналом</h3>
@@ -332,7 +213,7 @@
           <div class="product__content--second">
             <div class="card">
               <div class="card-img">
-                <img src="./asset/img/product-card.png" alt="" />
+                <img src="../asset/img/product-card.png" alt="" />
               </div>
               <div class="card-content">
                 <h3 class="card-title">1С:Бухгалтерия</h3>
@@ -347,7 +228,7 @@
             </div>
             <div class="card">
               <div class="card-img">
-                <img src="./asset/img/product-card.png" alt="" />
+                <img src="../asset/img/product-card.png" alt="" />
               </div>
               <div class="card-content">
                 <h3 class="card-title">1C:Розница</h3>
@@ -362,7 +243,7 @@
             </div>
             <div class="card">
               <div class="card-img">
-                <img src="./asset/img/product-card-2.png" alt="" />
+                <img src="../asset/img/product-card-2.png" alt="" />
               </div>
               <div class="card-content">
                 <h3 class="card-title">Клиентские лицензии</h3>
@@ -377,7 +258,7 @@
             </div>
             <div class="card">
               <div class="card-img">
-                <img src="./asset/img/product-card-3.png" alt="" />
+                <img src="../asset/img/product-card-3.png" alt="" />
               </div>
               <div class="card-content">
                 <h3 class="card-title">Лицензии на сервер</h3>
@@ -396,85 +277,137 @@
           </div>
         </div>
       </section>
-      <section class="main-insert">
+      <section class="product-program">
         <div class="container">
-          <div class="main-insert-ctn">
-            <div class="insert-content insert-left">
-              <div>
-                <h2 class="color-blue">E2E IT-ИНТЕГРАЦИИ</h2>
-                <div class="insert__text text22 color-blue">
-                  Мы — айтишная компания которая занимается автоматизацией
-                  бизнес задач. Для задач по автоматизации самое мощное
-                  подспорье и гибкое решение на рынке — это продукты 1с.
-                  У них там черт ногу сломит сколько всего есть.
+          <h1>Отраслевые программы</h1>
+          <div class="product-program__content">
+            <div class="card">
+              <div class="card-top">
+                <h3>1С: Логистика: Управление складом</h3>
+                <div class="card-text">
+                  Продукт для автоматизации управления складским хозяйством
+                  предприятия. Позволяет эффективно автоматизировать управление
+                  технологическими процессами современного складского комплекса
                 </div>
               </div>
 
-              <button class="button button-blue insert__button">
-                Узнать больше
-              </button>
-              <img
-                src="./asset/img/icons/bg/insert-left.svg"
-                alt="insert-left"
-              />
+              <a class="card-button" href="#">
+                <span>Приобрести продукт</span>
+                <img
+                  src="../asset/img/icons/service-var__icon.svg"
+                  alt="icon"
+                />
+              </a>
             </div>
-            <div class="insert-content insert-right">
-              <div>
-                <h2 class="color-white">ПОЛУЧИТЕ КОНСУЛЬТАЦИЮ</h2>
-                <div class="insert__text text22 color-white">
-                  Наша миссия — помогать принимать управленческие решения другим
-                  предприятиям. Заполните простую форму и мы ответим
-                  на все интересующие вас вопросы.
+            <div class="card">
+              <div class="card-top">
+                <h3>1С: Управление автотранспортом Стандарт</h3>
+                <div class="card-text">
+                  Предназначено для автоматизации управленческого и оперативного
+                  учёта в автотранспортных предприятиях и организациях,
+                  а также в автотранспортных подразделениях торговых,
+                  производственных и прочих предприятиях, использующих
+                  автотранспорт для собственных нужд.
                 </div>
               </div>
 
-              <button class="button button-white insert__button">
-                Получить консультацию
-              </button>
-              <img
-                src="./asset/img/icons/bg/insert-right.svg"
-                alt="insert-right.svg"
-              />
+              <a class="card-button" href="#">
+                <span>Приобрести продукт</span>
+                <img
+                  src="../asset/img/icons/service-var__icon.svg"
+                  alt="icon"
+                />
+              </a>
+            </div>
+            <div class="card">
+              <div class="card-top">
+                <h3>1С:Управление перевозками</h3>
+                <div class="card-text">
+                  Отраслевое решение предназначено для компаний, которые
+                  в процессе осуществления своей деятельности необходимо решение
+                  задач транспортной логистики
+                </div>
+              </div>
+
+              <a class="card-button" href="#">
+                <span>Приобрести продукт</span>
+                <img
+                  src="../asset/img/icons/service-var__icon.svg"
+                  alt="icon"
+                />
+              </a>
             </div>
           </div>
         </div>
       </section>
-      <section class="form">
+      <section class="form form-rent">
         <div class="container">
           <div class="form-ctn">
-            <div class="form-img desc">
-              <img src="./asset/img/form-comp.png" alt="form-comp" />
-            </div>
             <div class="form-form">
               <h2 class="form-title">
-                если вы готовы автоматизировать свой бизнес:
+                аренда программ <span class="accent-red">1С</span>
               </h2>
+              <div class="form-text text22">
+                Эта программа представляет собой виртуальной аналог коробочной
+                версии 1С. Зайти в приложение можно с любого устройства
+                через интернет.
+              </div>
               <div class="form-inputs text18">
                 <input placeholder="Ваше имя" type="text" />
                 <input placeholder="Ваш email" type="email" />
-                <input placeholder="Название компании" type="text" />
-                <div>Какая услуга вас интересует</div>
+                <!-- <input placeholder="Название компании" type="text" /> -->
+                <!-- <div>Какая услуга вас интересует</div> -->
               </div>
               <div class="form-inputs__span text14">
                 *Отправляя заявку, вы соглашаетесь на обработку персональных
                 данных
               </div>
               <button class="button button-blue form-button__send">
-                Обсудить сотрудничество
+                Арендовать
               </button>
               <div class="form-img mob">
-                <img src="./asset/img/form-comp.png" alt="form-comp" />
+                <img src="../asset/img/form-rent.png" alt="form-rent" />
               </div>
               <div class="form-bottom">
                 <div class="form-bottom__text">
-                  Или напишите нам сразу напрямую в мессенджеры:
+                  Работает на любой операционной системе:
                 </div>
                 <div class="form-bottom__buttons">
-                  <div class="form-bottom__buttons-WA text20">WhatsApp</div>
-                  <div class="form-bottom__buttons-TG text20">Telegram</div>
+                  <div class="form-bottom__system">Windows</div>
+                  <div class="form-bottom__system">MacOs</div>
+                  <div class="form-bottom__system">Linux</div>
+                  <div class="form-bottom__system">Android</div>
+                  <div class="form-bottom__system">Ios</div>
                 </div>
               </div>
             </div>
+            <div class="form-img desc">
+              <img src="../asset/img/form-rent.png" alt="form-rent" />
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="insert-mark">
+        <div class="container">
+          <div class="insert-ctn">
+            <h2>Хотите узнать стоимость?</h2>
+            <div class="insert-mark__right">
+              <div class="insert-mark__text text22">
+                Заполните простую формы и мы ответим на все интересующие
+                вас вопросы
+              </div>
+              <button class="button button-white">Оставить заявку</button>
+            </div>
+            <img
+              class="img-inser-1"
+              src="../asset/img/icons/bg/insert-1.svg"
+              alt="inser-1"
+            />
+            <img
+              class="img-inser-2"
+              src="../asset/img/icons/bg/insert-2.svg"
+              alt="inser-2"
+            />
           </div>
         </div>
       </section>
@@ -484,8 +417,8 @@
             <div class="footer-top">
               <div class="footer-col">
                 <div class="footer-logo">
-                  <img src="./asset/img/logo_e2e.png" alt="logo_e2e" />
-                  <img src="./asset/img/logo_1c.png" alt="logo_1c" />
+                  <img src="../asset/img/logo_e2e.png" alt="logo_e2e" />
+                  <img src="../asset/img/logo_1c.png" alt="logo_1c" />
                 </div>
                 <div class="footer-address text18">
                   Новороссийск, с. Цемдолина, ул. Школьная, д. 1А
@@ -549,14 +482,15 @@
                 </div>
               </div>
               <div class="footer-bottom__logo">
-                <img src="./asset/img/footer-logo__p7.png" alt="p7" />
-                <img src="./asset/img/footer-logo__bitrix.png" alt="bitrix" />
+                <img src="../asset/img/footer-logo__p7.png" alt="p7" />
+                <img src="../asset/img/footer-logo__bitrix.png" alt="bitrix" />
               </div>
             </div>
           </div>
         </div>
       </footer>
     </div>
-    <script src="./asset/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="../asset/app.js"></script>
   </body>
 </html>

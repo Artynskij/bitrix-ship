@@ -7,14 +7,20 @@
     <link rel="stylesheet" href="../asset/main.css" />
     <link rel="stylesheet" href="../asset/style.css" />
     <link rel="stylesheet" href="../asset/fonts/font.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
   </head>
+
   <body>
-    <div class="wrapper" id="contact-page">
+    <div class="wrapper" id="services-page">
       <header class="header">
         <div class="container">
           <div class="header-logo">
             <a href="/">
-              <img src="../asset/img/Logo_SD.png" alt="logo" />
+              <img src="../asset/img/logo_e2e.png" alt="logo" />
+              <img src="../asset/img/logo_1c.png" alt="logo" />
             </a>
           </div>
           <button
@@ -25,166 +31,282 @@
           >
             <span class="burger__line"></span>
           </button>
-          <nav class="nav" data-nav>
+          <nav class="nav text18" data-nav>
             <ul class="nav-list">
               <li class="nav-item">
-                <a href="./about.page.html">About us</a>
+                <div class="nav-item__url">
+                  <span>Услуги</span>
+                  <img src="../asset/img/icons/IconArrowBottom.svg" alt="" />
+                </div>
+
+                <div class="nav-item__dropdown">
+                  <ul>
+                    <a href="../templates/services.logistic.page.html">
+                      <li>Логистика</li>
+                    </a>
+                    <a href="../templates/services.torgovly.page.html">
+                      <li>Розница</li>
+                    </a>
+                    <a href="../templates/services.obshepit.page.html">
+                      <li>Общепит</li>
+                    </a>
+                    <a href="../templates/services.making.page.html">
+                      <li>Производство</li>
+                    </a>
+                  </ul>
+                </div>
               </li>
               <li class="nav-item">
-                <a href="./services.page.html">Services</a>
-              </li>
-              <li class="nav-item">
-                <a href="./fleet.page.html">Fleet</a>
+                <div class="nav-item__url">
+                  <span>Продукты</span>
+                  <img src="../asset/img/icons/IconArrowBottom.svg" alt="" />
+                </div>
+                <div class="nav-item__dropdown">
+                  <ul>
+                    <a href="../templates/product.postava.page.html">
+                      <li>Поставляемые</li>
+                    </a>
+                    <a href="../templates/product.buh.page.html">
+                      <li>Бухгалтерия</li>
+                    </a>
+                  </ul>
+                </div>
               </li>
 
-              <li class="nav-item active">
-                <a href="./contacts.page.html">Contacts</a>
+              <!-- <li class="nav-item">
+                <a href="#">Аренда программ 1C</a>
+              </li> -->
+              <li class="nav-item">
+                <div class="nav-item__url">
+                  <span>Импортозамещение</span>
+                  <img src="../asset/img/icons/IconArrowBottom.svg" alt="" />
+                </div>
+                <div class="nav-item__dropdown">
+                  <ul>
+                    <a href="../templates/rentProgram.page.html">
+                      <li>Аренда</li>
+                    </a>
+                    <a href="../templates/certificate.page.html">
+                      <li>Сертификаты</li>
+                    </a>
+                  </ul>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item__url" href="#">Битрикс 24</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-item__url" href="../templates/about.page.html"
+                  >О нас</a
+                >
               </li>
             </ul>
-            <div class="nav-bottom">
-              <div class="header-lang">
-                <span>EN</span><span class="active">RU</span>
+            <div class="nav-contact">
+              <div class="header-contact">
+                <span class="nav-item active">
+                  <a
+                    class="nav-item__url"
+                    href="../templates/contacts.page.html"
+                  >
+                    Контакты
+                  </a>
+                </span>
               </div>
-              <div class="nav-bottom__contact">
-                <a href="tel:">+7 985 773-18-69</a>
-                <a href="mailto:arenallc@arena-llc.com">
-                  arenallc@arena-llc.com
-                </a>
+              <div class="header--mob nav-bottom__contact">
+                <a
+                  href="tel:88007002779"
+                  class="header--mob button button-blue header-button"
+                  >8 800 700-27-79</a
+                >
+                <button class="button header-button">Заказать звонок</button>
               </div>
-              <div>
-                <button class="button">
-                  <span></span>
-                  <span>get in touch</span>
-
-                  <img
-                    src="./asset/img/icons/icon arrow 45 white.svg"
-                    alt="arrow"
-                  />
-                </button>
-              </div>
+            </div>
+            <div class="header--desc nav-bottom__contact">
+              <button class="button header-button">Заказать звонок</button>
             </div>
           </nav>
-          <div class="header-lang desc">
-            <span>EN</span><span class="active">RU</span>
-          </div>
+          <!-- <div class="header-contact desk">
+            <span>8 800 700-27-79</span>
+            <span class="button">Заказать звонок</span>
+          </div> -->
         </div>
       </header>
-      <section class="contact-map">
-        <div class="container">
-          <div class="contact-map__content">
-            <div class="callout">
-              <h2>
-                We look forward to offering you our enhanced support and
-                assistance.
-              </h2>
-              <div class="callout-imgs">
-                <img src="../asset/img/icons/callout lines.svg" alt="lines" />
-                <img src="../asset/img/icons/callout-arrow.svg" alt="arrow" />
-              </div>
 
-              <!-- <div class="callout-bg mob">
-                <img src="../asset/img/dialog-bg-mob.svg" alt="dialog-pic" />
-              </div> -->
+      <section class="form form-contact">
+        <div class="container">
+          <div class="form-ctn">
+            <div class="form-img desc">
+              <img src="../asset/img/contact-map.png" alt="map" />
             </div>
-            <div class="map">
-              <img src="../asset/img/map-location.png" alt="map" />
+            <div class="form-form">
+              <h2 class="form-title">
+                если вы готовы автоматизировать свой бизнес:
+              </h2>
+              <div class="form-inputs text18">
+                <input placeholder="Ваше имя" type="text" />
+                <input placeholder="Ваш email" type="email" />
+                <input placeholder="Название компании" type="text" />
+                <div>Какая услуга вас интересует</div>
+              </div>
+              <div class="form-inputs__span text14">
+                *Отправляя заявку, вы соглашаетесь на обработку персональных
+                данных
+              </div>
+              <button class="button button-blue form-button__send">
+                Обсудить сотрудничество
+              </button>
+              <div class="form-img mob">
+                <img src="../asset/img/contact-map.png" alt="map" />
+              </div>
+              <div class="form-bottom">
+                <div class="form-group__item">
+                  <img
+                    src="../asset/img/icons/location-contact.svg"
+                    alt="location"
+                  />
+                  <span>Новороссийск, с. Цемдолина, ул. Школьная, д. 1А</span>
+                </div>
+                <div class="form-group">
+                  <div class="form-group__item">
+                    <img
+                      src="../asset/img/icons/whatsapp-contact.svg"
+                      alt="whatsapp"
+                    />
+                    <a>8 960 485-38-85</a>
+                  </div>
+                  <div class="form-group__item">
+                    <img
+                      src="../asset/img/icons/telegram-contact.svg"
+                      alt="telegram"
+                    />
+                    <a>@e2e_integrations</a>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <div class="form-group__item">
+                    <img
+                      src="../asset/img/icons/phone-contact.svg"
+                      alt="phone"
+                    />
+                    <a href="tel:88007002779">8 800 700-27-79</a>
+                  </div>
+                  <div class="form-group__item">
+                    <img
+                      src="../asset/img/icons/message-contact.svg"
+                      alt="message"
+                    />
+                    <a href="mailto:projects@e-2-e.ru">projects@e-2-e.ru</a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="contactus">
+      <section class="insert-mark">
         <div class="container">
-          <div class="contact-block">
-            <div class="contact-left__title">
-              <div class="uptitle">
-                <img
-                  class="logo-span"
-                  src="../asset/img/banner_upTitle.png"
-                  alt="plogo"
-                />
-                <span>What do we do?</span>
+          <div class="insert-ctn">
+            <h2>Хотите узнать стоимость?</h2>
+            <div class="insert-mark__right">
+              <div class="insert-mark__text text22">
+                Заполните простую формы и мы ответим на все интересующие
+                вас вопросы
               </div>
-              <h2>CONTACT US</h2>
-              <span
-                >Thank you for your interest in our services. Please fill out
-                the email form, submit and we will get back to you soon.
-              </span>
+              <button class="button button-white">Оставить заявку</button>
             </div>
-            <div class="contact-left__content">
-              <div class="contact-left__content-keys">
-                <span>Address</span>
-                <span>Phone</span>
-                <span>Email</span>
-              </div>
-              <div class="contact-left__content-value">
-                <span>Russia, Moscow.</span>
-                <span>
-                  Ms. Elena BARYSHEVA - Shipbroker
-                  <br />
-                  <a href="tel:+7 985 773-18-69"> +7 985 773-18-69</a>
-                </span>
-
-                <a href="mailto:+7 985 773-18-69">arenallc@arena-llc.com</a>
-              </div>
-            </div>
-            <form class="contact-form">
-              <h3 class="form-title">Fill in the forms:</h3>
-              <div class="form-inputs">
-                <input placeholder="Name..." type="name" />
-                <input placeholder="Email..." type="email" />
-                <input placeholder="Subjects..." type="name" />
-                <textarea placeholder="Message..." name="text"></textarea>
-              </div>
-              <button class="button">
-                <span></span>
-                <span>Submit</span>
-
-                <img
-                  src="../asset/img/icons/icon arrow 45 white.svg"
-                  alt="arrow"
-                />
-              </button>
-            </form>
+            <img
+              class="img-inser-1"
+              src="../asset/img/icons/bg/insert-1.svg"
+              alt="inser-1"
+            />
+            <img
+              class="img-inser-2"
+              src="../asset/img/icons/bg/insert-2.svg"
+              alt="inser-2"
+            />
           </div>
         </div>
       </section>
       <footer class="footer">
         <div class="container">
-          <div class="footer-topLeft">
-            <div class="footer-nav">
-              <a href="./about.page.html">About us</a>
-              <a href="./services.page.html">Services</a>
-              <a href="./fleet.page.html">Fleet</a>
-              <a href="./contacts.page.html">Contacts</a>
+          <div class="footer-ctn">
+            <div class="footer-top">
+              <div class="footer-col">
+                <div class="footer-logo">
+                  <img src="../asset/img/logo_e2e.png" alt="logo_e2e" />
+                  <img src="../asset/img/logo_1c.png" alt="logo_1c" />
+                </div>
+                <div class="footer-address text18">
+                  Новороссийск, с. Цемдолина, ул. Школьная, д. 1А
+                </div>
+                <div class="footer-question text18">
+                  Остались вопросы? Оставьте заявку,<br />
+                  и наш администратор свяжется с Вами
+                </div>
+                <a class="button button-blue footer-btn__send">
+                  Оставить заявку
+                </a>
+              </div>
+              <div class="footer-col text18">
+                <div class="footer-list">
+                  <div class="footer-list__title text22">Услуги</div>
+                  <div class="footer-list__item">ИТС сопровождение</div>
+                  <div class="footer-list__item">Аналитика</div>
+                  <div class="footer-list__item">Программы 1C</div>
+                  <div class="footer-list__item">Доработка</div>
+                  <div class="footer-list__item">Разработка</div>
+                  <div class="footer-list__item">Оборудование</div>
+                </div>
+                <div class="footer-list">
+                  <div class="footer-list__title text22">Компания</div>
+                  <div class="footer-list__item">Все услуги</div>
+                  <div class="footer-list__item">Продукты</div>
+                  <div class="footer-list__item">О нас</div>
+                  <div class="footer-list__item">Аренда программ 1C</div>
+                  <div class="footer-list__item">Контакты</div>
+                </div>
+              </div>
+              <div class="footer-col">
+                <div class="footer-list__title text22">Контакты</div>
+                <div class="footer-buttons">
+                  <a href="tel:+88007002779" class="footer-but footer-number">
+                    8 800 700-27-79
+                  </a>
+                  <a
+                    href="mailto:projects@e-2-e.ru"
+                    class="footer-but footer-mail"
+                  >
+                    projects@e-2-e.ru
+                  </a>
+                </div>
+                <div class="footer-buttons">
+                  <a class="footer-but footer-button__WA">WhatsApp</a>
+                  <a class="footer-but footer-button__TG">Telegram</a>
+                </div>
+              </div>
             </div>
-            <div class="footer-contact">
-              <a href="tel:+74951234567">+7 985 773-18-69</a>
-              <a href="email:arenallc@arena-llc.com">arenallc@arena-llc.com</a>
+            <div class="footer-bottom text16">
+              <div class="footer-bottom__left">
+                <div class="footer-bottom__left-item">
+                  <span>ООО «Е2Е АЙТИ ИНТЕГРАЦИИ»</span>
+                  <span>ИНН: 2315231492</span>
+                  <span>КПП: 231501001</span>
+                </div>
+                <div class="footer-bottom__left-item">
+                  <a href="#">Политика конфиденциальности</a>
+                  <a href="#">Скачать реквизиты</a>
+                </div>
+              </div>
+              <div class="footer-bottom__logo">
+                <img src="../asset/img/footer-logo__p7.png" alt="p7" />
+                <img src="../asset/img/footer-logo__bitrix.png" alt="bitrix" />
+              </div>
             </div>
-          </div>
-          <div class="footer-topRight">
-            <button class="button button-cursive">
-              <span></span>
-              <span>get in touch</span>
-              <img
-                src="../asset/img/icons/icon arrow 45 white.svg"
-                alt="arrow"
-              />
-            </button>
-          </div>
-          <div class="footer-bottomLeft">
-            <span>Sea Deals. ©2024. All rights reserved.</span>
-          </div>
-          <div class="footer-bottomRight">
-            <a href="#">Terms of Use</a>
-            <a href="#">Privacy Policy</a>
-          </div>
-          <div class="footer-bg">
-            <img src="../asset/img/footer-bg.png" alt="footer-bg" />
           </div>
         </div>
       </footer>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="../asset/app.js"></script>
   </body>
 </html>
