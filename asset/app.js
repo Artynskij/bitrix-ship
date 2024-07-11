@@ -190,38 +190,48 @@ function modalLogic() {
   if (!modalBlock) return;
   const btns = document.querySelectorAll(".open-modal");
   const modalOverlay = modalBlock.querySelector(".modal-overlay ");
-  const modal = modalBlock.querySelector(".modal");
+  const modals = modalBlock.querySelectorAll(".modal");
   const modalContent = modalBlock.querySelector(".modal-content");
   const btnsClose = modalBlock.querySelector(".modal-close");
   btns.forEach((el) => {
     el.addEventListener("click", (e) => {
       let path = e.currentTarget.getAttribute("data-path");
+      modals.forEach((el) => {
+        el.classList.remove("modal--visible");
+      });
       body.style.overflow = "hidden";
       body.style.paddingRight = "10px";
-      modalContent.innerHTML = el.outerHTML;
-      // modalContent.classList.add("certificate-block");
-      modal.classList.add("modal--visible");
+
+      if (path === "cert") {
+        modalContent.innerHTML = el.outerHTML;
+      }
+      document
+        .querySelector(`[data-target="${path}"]`)
+        .classList.add("modal--visible");
+
       modalOverlay.classList.add("modal-overlay--visible");
     });
   });
 
   btnsClose.addEventListener("click", () => {
     modalOverlay.classList.remove("modal-overlay--visible");
-    modalContent.innerHTML = "";
+
     // modalContent.classList.remove("certificate-block");
     body.style.overflow = "auto";
     body.style.paddingRight = "0";
     modal.classList.remove("modal--visible");
+
+    modalContent.innerHTML = "";
   });
 
   modalOverlay.addEventListener("click", (e) => {
     if (e.target == modalOverlay) {
-      modalContent.innerHTML = "";
-      // modalContent.classList.remove("certificate-block");
       body.style.overflow = "auto";
       body.style.paddingRight = "0";
       modalOverlay.classList.remove("modal-overlay--visible");
       modal.classList.remove("modal--visible");
+
+      modalContent.innerHTML = "";
     }
   });
 }

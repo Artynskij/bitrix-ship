@@ -127,7 +127,7 @@
           </div> -->
         </div>
       </header>
-      <!-- <section class="main-banner">
+      <section class="main-banner">
         <div class="container">
           <h1>Индивидуальные IT решения на платформе 1С:Предприятие 8</h1>
           <div class="banner text18">
@@ -198,7 +198,7 @@
             </div>
           </div>
         </div>
-      </section> -->
+      </section>
       <section class="main-service">
         <div class="container">
           <h1>Услуги</h1>
@@ -255,7 +255,12 @@
                 Заполните простую формы и мы ответим на все интересующие
                 вас вопросы
               </div>
-              <button class="button button-white">Оставить заявку</button>
+              <button
+                data-path="popup-form"
+                class="button button-white open-modal"
+              >
+                Оставить заявку
+              </button>
             </div>
             <img
               class="img-inser-1"
@@ -571,6 +576,64 @@
           </div>
         </div>
       </footer>
+      <div class="modal-block">
+        <div class="modal-overlay">
+          <div data-target="popup-form" class="modal">
+            <div class="modal-content">
+              <div class="form-form form-popup">
+                <h3 class="form-title">
+                  <span>Оставить заявку</span>
+
+                  <div class="modal-close">
+                    <img src="./asset/img/icons/close.svg" alt="close">
+                  </div>
+                </h3>
+                <div class="form-inputs__span text14">
+                  Если вы готовы автоматизировать ваш бизнес, оставьте заявку, и наш консультант свяжется с вами
+                </div>
+                <div class="form-inputs text18">
+                  <input placeholder="Ваше имя" type="text" />
+                  <input placeholder="Ваш email" type="email" />
+                  <input placeholder="Название компании" type="text" />
+                  <div class="select-ctn">
+                    <select name="select" class="text18">
+                      <option selected class="text18" value="value1">
+                        Какая услуга вас интересует
+                      </option>
+                      <option class="text18" value="value2">РПГ</option>
+                      <option class="text18" value="value3">Бананы</option>
+                      <option class="text18" value="value4">2 человека</option>
+                    </select>
+                    <div class="select-ctn__img">
+                      <img
+                        src="./asset/img/icons/IconArrowBottom.svg"
+                        alt="ArrowBottom"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="form-inputs__span text14">
+                  *Отправляя заявку, вы соглашаетесь на обработку персональных
+                  данных
+                </div>
+                <button class="button button-red form-button__send">
+                  Отправить
+                </button>
+
+                <!-- <div class="form-bottom">
+                  <div class="form-bottom__text">
+                    Или напишите нам сразу напрямую в мессенджеры:
+                  </div>
+                  <div class="form-bottom__buttons">
+                    <div class="form-bottom__buttons-WA text20">WhatsApp</div>
+                    <div class="form-bottom__buttons-TG text20">Telegram</div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./asset/app.js"></script>
   </body>

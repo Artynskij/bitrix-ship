@@ -12,6 +12,7 @@
   border: none;
   cursor: pointer;
   transition: var(--transition);
+  height: fit-content;
 }
 
 .button-white {
@@ -292,6 +293,7 @@
   }
   .header-button {
     width: 100%;
+    padding: 15px;
   }
 
   .nav-item__dropdown {
@@ -573,6 +575,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  pointer-events: none;
 }
 .form-inputs select {
   border-radius: 12px;
@@ -588,9 +591,7 @@ select:focus-visible {
   border: none;
   outline: 0;
 }
-select:focus-visible.select-ctn__img{
-  transform: rotate(180deg);
-}
+
 .form-inputs__span {
   color: var(--grey);
   margin-bottom: 40px;
@@ -609,7 +610,7 @@ select:focus-visible.select-ctn__img{
 }
 .form-bottom__buttons {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   gap: 10px;
 }
 .form-bottom__buttons-WA {
@@ -649,6 +650,32 @@ select:focus-visible.select-ctn__img{
   flex-direction: column;
   justify-content: space-between;
 }
+.form-rent .form-inputs__span {
+  grid-column-end: 3;
+  grid-column-start: 1;
+}
+.form-rent .form-button__send {
+  width: fit-content;
+}
+
+.form-popup .form-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+.form-popup .modal-close {
+  position: relative;
+  padding: 10px;
+  background-color: var(--secondary);
+  top: auto;
+  right: auto;
+  font-size: 18px;
+}
+.form-popup .form-inputs {
+  grid-template-columns: 1fr;
+}
+
 @media (max-width: 1000px) {
   .form-ctn {
     display: flex;
@@ -687,6 +714,9 @@ select:focus-visible.select-ctn__img{
     margin-bottom: 30px;
     color: var(--grey);
   }
+  .form-rent .form-button__send {
+    width: 100%;
+  }
 }
 
 /* --------------------------------------------- insert-mark --------------------------------------------- */
@@ -705,11 +735,13 @@ select:focus-visible.select-ctn__img{
   border-radius: 30px;
   position: relative;
   text-align: center;
+  text-align: start;
 }
 .insert-mark h2 {
 }
 .insert-mark__right {
   display: flex;
+  align-items: center;
   gap: 20px;
 }
 .insert-mark__text {
@@ -935,6 +967,7 @@ select:focus-visible.select-ctn__img{
 .product .card .button {
   text-wrap: wrap;
   padding: 18px 0;
+  margin-top: auto;
 }
 .product__btn--more {
   display: none;
@@ -1210,7 +1243,9 @@ select:focus-visible.select-ctn__img{
   .footer-question {
     margin-bottom: 15px;
   }
-
+  .footer-btn__send {
+    width: 100%;
+  }
   .footer-list {
     gap: 8px;
   }
@@ -1369,6 +1404,7 @@ select:focus-visible.select-ctn__img{
   align-items: center;
   gap: 5px;
   transition: var(--transition);
+  color: var(--blue);
 }
 .service-variable__item a:hover {
   opacity: 0.7;
@@ -1437,6 +1473,13 @@ select:focus-visible.select-ctn__img{
 }
 .service-table__content-item span:nth-child(2) {
   color: var(--grey);
+}
+.service-table__content-item a {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: var(--transition);
+  color: var(--blue);
 }
 @media (max-width: 1000px) {
   .service-title__ctn {
@@ -2023,6 +2066,7 @@ select:focus-visible.select-ctn__img{
   padding: 20px 25px;
   border-radius: 20px;
 }
+
 @media (max-width: 1000px) {
   .certificate-block .container {
     gap: 30px;
