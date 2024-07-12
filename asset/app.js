@@ -19,12 +19,15 @@ function burgerLogic() {
   const body = document.body;
   const header = document?.querySelector(".header");
   const headerHeight = header.offsetHeight;
+  let overflowState = false;
   document
     .querySelector(":root")
     .style.setProperty("--header-height", `${headerHeight}px`);
 
   burger?.addEventListener("click", () => {
-    body.classList.toggle("stop-scroll");
+    overflowState = !overflowState;
+    overflowBody({ hidden: overflowState });
+
     burger?.classList.toggle("burger--active");
     nav?.classList.toggle("nav--visible");
   });
@@ -187,51 +190,70 @@ function moreProductLogic() {
 // modalLogic
 function modalLogic() {
   const modalBlock = document.querySelector(".modal-block");
+  const wrapper = body.querySelector(".wrapper");
   if (!modalBlock) return;
   const btns = document.querySelectorAll(".open-modal");
   const modalOverlay = modalBlock.querySelector(".modal-overlay ");
   const modals = modalBlock.querySelectorAll(".modal");
   const modalContent = modalBlock.querySelector(".modal-content");
-  const btnsClose = modalBlock.querySelector(".modal-close");
+  const btnsClose = modalBlock.querySelectorAll(".modal-close");
   btns.forEach((el) => {
     el.addEventListener("click", (e) => {
       let path = e.currentTarget.getAttribute("data-path");
       modals.forEach((el) => {
         el.classList.remove("modal--visible");
       });
-      body.style.overflow = "hidden";
-      body.style.paddingRight = "10px";
 
       if (path === "cert") {
         modalContent.innerHTML = el.outerHTML;
       }
-      document
-        .querySelector(`[data-target="${path}"]`)
-        .classList.add("modal--visible");
+      const actualModal = document.querySelector(`[data-target="${path}"]`);
+      if (!actualModal) {
+        console.log("modal is undefined");
+        return;
+      }
+      actualModal.classList.add("modal--visible");
 
       modalOverlay.classList.add("modal-overlay--visible");
+
+      overflowBody({ hidden: true });
     });
   });
 
-  btnsClose.addEventListener("click", () => {
-    modalOverlay.classList.remove("modal-overlay--visible");
+  btnsClose.forEach((btnC) => {
+    btnC.addEventListener("click", () => {
+      modalOverlay.classList.remove("modal-overlay--visible");
 
-    // modalContent.classList.remove("certificate-block");
-    body.style.overflow = "auto";
-    body.style.paddingRight = "0";
-    modal.classList.remove("modal--visible");
+      overflowBody({ hidden: false });
+      modals.forEach((el) => {
+        el.classList.remove("modal--visible");
+      });
 
-    modalContent.innerHTML = "";
+      // modalContent.innerHTML = "";
+    });
   });
 
   modalOverlay.addEventListener("click", (e) => {
     if (e.target == modalOverlay) {
-      body.style.overflow = "auto";
-      body.style.paddingRight = "0";
+      overflowBody({ hidden: false });
       modalOverlay.classList.remove("modal-overlay--visible");
-      modal.classList.remove("modal--visible");
+      modals.forEach((el) => {
+        el.classList.remove("modal--visible");
+      });
 
-      modalContent.innerHTML = "";
+      // modalContent.innerHTML = "";
     }
   });
 }
+
+// additionalFunc
+const overflowBody = ({ hidden: hidden }) => {
+  if (hidden) {
+    const startClientWidth = body.clientWidth;
+    body.style.overflow = "hidden";
+    body.style.marginRight = `${body.clientWidth - startClientWidth}px`;
+  } else {
+    body.style.overflow = "auto";
+    body.style.marginRight = "0";
+  }
+};

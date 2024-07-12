@@ -675,6 +675,9 @@ select:focus-visible {
 .form-popup .form-inputs {
   grid-template-columns: 1fr;
 }
+.form-popup .form-button__send{
+  margin-bottom: 0;
+}
 
 @media (max-width: 1000px) {
   .form-ctn {
