@@ -778,6 +778,7 @@ select:focus-visible {
   /* margin-top: 90px; */
 }
 .main-banner .container {
+  overflow: hidden;
 }
 .main-banner h1 {
   color: var(--red);
