@@ -1936,8 +1936,12 @@ select:focus-visible {
     align-items: center;
   }
   .product-title__buh-img {
+    width: 221px;
+    height: 230px;
     margin-bottom: 25px;
     max-width: 100%;
+    border: 6.5px solid rgba(246, 246, 246, 1);
+    padding: 10px 30px;
   }
   .buh-cards__ctn {
     text-wrap: nowrap;
