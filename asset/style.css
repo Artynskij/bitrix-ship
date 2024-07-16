@@ -214,7 +214,7 @@ h3 {
   /* colors */
   --white: rgba(254, 254, 254, 1);
   --secondary: rgba(246, 246, 246, 1);
-  --grey: rgba(27, 27, 27, 0.5);
+  --grey: rgba(27, 27, 27, 0.8);
   --grey-20: rgba(27, 27, 27, 0.2);
   --black: rgba(45, 45, 45, 1);
   --blue: rgba(47, 92, 167, 1);
