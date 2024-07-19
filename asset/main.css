@@ -866,6 +866,7 @@ select:focus-visible {
   border-radius: 20px;
   background-color: var(--white);
   text-wrap: nowrap;
+  color: var(--grey);
 }
 .banner-text img {
 }
