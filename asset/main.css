@@ -240,10 +240,6 @@
 .nav-item__dropdown ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  /* flex-direction: column; */
-  /* color: var(--black); */
-  max-width: 1300px;
-  margin: 0 auto;
 
   box-shadow: 0px 5px 10px var(--grey-20);
   background-color: var(--white);
