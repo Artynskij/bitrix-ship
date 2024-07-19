@@ -1,14 +1,12 @@
 <svg width="222" height="128" viewBox="0 0 222 128" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.4">
-<path d="M221.5 37H146.5L131.5 63L50 63.5L1 10" stroke="#2F5CA7" stroke-width="2"/>
-<path d="M180.643 40H194L184.964 56H172L180.643 40Z" fill="#2F5CA7"/>
-<path d="M164.643 40H178L168.964 56H156L164.643 40Z" fill="#2F5CA7"/>
-<path d="M148.643 40H162L152.964 56H140L148.643 40Z" fill="#EB6A6A"/>
+<path opacity="0.4" d="M221.5 37H146.5L131.5 63L50 63.5L1 10" stroke="#3B588F" stroke-width="2"/>
+<path opacity="0.4" d="M180.643 40H194L184.964 56H172L180.643 40Z" fill="#3B588F"/>
+<path d="M164.643 40H178L168.964 56H156L164.643 40Z" fill="#3B588F"/>
+<path opacity="0.4" d="M148.643 40H162L152.964 56H140L148.643 40Z" fill="#3B588F"/>
 <g filter="url(#filter0_d_404_6244)">
-<circle cx="74" cy="64" r="10" fill="#2F5CA7"/>
+<circle cx="74" cy="64" r="10" fill="#3B588F"/>
 </g>
-<path opacity="0.2" d="M107 69.5H46L13 32" stroke="#2F5CA7" stroke-width="2"/>
-</g>
+<path opacity="0.2" d="M107 69.5H46L13 32" stroke="#3B588F" stroke-width="2"/>
 <defs>
 <filter id="filter0_d_404_6244" x="10" y="0" width="128" height="128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
