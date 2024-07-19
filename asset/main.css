@@ -809,47 +809,54 @@ select:focus-visible {
 }
 .main-banner .container {
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
 }
 .main-banner h1 {
   color: var(--red);
   text-align: center;
 }
 .main-banner .banner {
-  margin: 100px 0;
   display: flex;
   justify-content: center;
   position: relative;
+  /* transform: translate(-47px, 0); */
 }
 .main-banner .banner-box {
+  position: relative;
+}
+.main-img--ctn {
   padding: 25px;
   background: var(--white);
   border: 14px solid rgba(246, 246, 246, 1);
   border-radius: 30px;
-  position: relative;
+  box-shadow: 0px 0px 10px var(--grey-20);
+  width: fit-content;
 }
-
 .main-banner .banner-box img {
 }
 .banner-frame {
   position: absolute;
+  z-index: -1;
 }
 .banner-frame1 {
   top: 20%;
-  right: 105%;
+  right: 99%;
   width: 220px;
   height: 64px;
 }
 .banner-frame2 {
   top: 20%;
-  left: 105%;
+  left: 99%;
 }
 .banner-frame3 {
-  bottom: 0%;
-  right: 100%;
+  bottom: 10%;
+  right: 96%;
 }
 .banner-frame4 {
-  bottom: -24%;
-  left: 105%;
+  bottom: -13%;
+  left: 99%;
 }
 .banner-text {
   display: flex;
@@ -858,38 +865,73 @@ select:focus-visible {
   position: absolute;
   border-radius: 20px;
   background-color: var(--white);
+  text-wrap: nowrap;
 }
 .banner-text img {
 }
 .banner-text span {
 }
 .banner-text1 {
-  top: -6%;
+  top: 0%;
   left: -130%;
-  /* top: -2%;
-  left: 2%; */
 }
 .banner-text2 {
   top: 0%;
-  right: 3%;
 
-  right: -170%;
-  /* top: 10%;
-  right: 3%; */
+  right: -150%;
 }
 .banner-text3 {
-  bottom: 20%;
+  bottom: 22%;
   left: -140%;
   /* bottom: 26%;
   left: 7%; */
 }
 .banner-text4 {
-  bottom: 0%;
+  bottom: 10%;
   right: -150%;
   /* bottom: 6%;
   right: 2%; */
 }
-@media (max-width: 1000px) {
+.main-banner .button {
+  width: fit-content;
+  margin: 0 auto;
+  /* transform: translate(-47px, 0); */
+}
+@media (max-width: 1300px) {
+  .main-banner .container {
+    gap: 25px;
+  }
+  .banner-frame {
+    display: none;
+  }
+  .banner-text {
+    position: static;
+  }
+  .main-banner .banner {
+    transform: translate(0, 0);
+  }
+  .main-banner .banner-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    max-width: 100%;
+  }
+  .banner-text--ctn {
+    display: flex;
+    overflow: auto;
+    max-width: 100%;
+    gap: 10px;
+  }
+  .banner-text {
+    min-width: fit-content;
+    padding: 10px;
+  }
+  .main-banner .button {
+    width: 100%;
+
+    transform: translate(0, 0);
+  }
 }
 /* --------------------------------------------- main-service  --------------------------------------------- */
 .main-service {

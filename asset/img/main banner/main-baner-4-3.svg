@@ -1,27 +1,10 @@
-<svg width="317" height="162" viewBox="0 0 317 162" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.4">
-<path d="M316 19L287 56H200L175 98H75L1 1" stroke="#2F5CA7" stroke-width="2"/>
-<g filter="url(#filter0_d_404_6269)">
-<circle cx="100" cy="98" r="10" fill="#2F5CA7"/>
-</g>
-<path opacity="0.2" d="M133 104.5H72L42 65.5" stroke="#2F5CA7" stroke-width="2"/>
-<path d="M266.643 60H280L270.964 76H258L266.643 60Z" fill="#2F5CA7"/>
-<path d="M250.643 60H264L254.964 76H242L250.643 60Z" fill="#2F5CA7"/>
-<path d="M234.643 60H248L238.964 76H226L234.643 60Z" fill="#2F5CA7"/>
-<path d="M218.643 60H232L222.964 76H210L218.643 60Z" fill="#2F5CA7"/>
-<path d="M202.643 60H216L206.964 76H194L202.643 60Z" fill="#EB6A6A"/>
-</g>
-<defs>
-<filter id="filter0_d_404_6269" x="36" y="34" width="128" height="128" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feMorphology radius="10" operator="dilate" in="SourceAlpha" result="effect1_dropShadow_404_6269"/>
-<feOffset/>
-<feGaussianBlur stdDeviation="22"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0.184314 0 0 0 0 0.360784 0 0 0 0 0.654902 0 0 0 1 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_404_6269"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_404_6269" result="shape"/>
-</filter>
-</defs>
+<svg width="317" height="108" viewBox="0 0 317 108" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path opacity="0.4" d="M316 19L287 56H200L175 98H75L1 1" stroke="#3B588F" stroke-width="2"/>
+<circle cx="100" cy="98" r="10" fill="#3B588F"/>
+<path opacity="0.2" d="M133 104.5H72L42 65.5" stroke="#3B588F" stroke-width="2"/>
+<path opacity="0.4" d="M266.643 60H280L270.964 76H258L266.643 60Z" fill="#3B588F"/>
+<path opacity="0.4" d="M250.643 60H264L254.964 76H242L250.643 60Z" fill="#3B588F"/>
+<path opacity="0.4" d="M234.643 60H248L238.964 76H226L234.643 60Z" fill="#3B588F"/>
+<path opacity="0.4" d="M218.643 60H232L222.964 76H210L218.643 60Z" fill="#3B588F"/>
+<path d="M202.643 60H216L206.964 76H194L202.643 60Z" fill="#3B588F"/>
 </svg>
