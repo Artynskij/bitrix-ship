@@ -5,4 +5,4 @@
 
 ## Где код?
 
-Весь исходный код находится в ветке [`project-code`](/dev)
+Весь исходный код находится в ветке [`project-code`](https://github.com/Artynskij/bitrix-ship/tree/dev)
